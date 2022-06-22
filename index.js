@@ -25,8 +25,14 @@ client.on("messageCreate", (message) => { //checks if a message is sent bu a use
     }
 });
 
-client.on("messageCreate", (message) => {
+client.on("messageCreate", (message, member) => {
     if (message.content == "balls"){
+        message.reply("why do thy exist in this ratched world, just to out the words balls. shame on thy.")
+    }
+});
+
+client.on("messageCreate", (message, member) => {
+    if (message.content == "Balls"){
         message.reply("why do thy exist in this ratched world, just to out the words balls. shame on thy.")
     }
 });
